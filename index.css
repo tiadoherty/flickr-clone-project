@@ -26,7 +26,7 @@ header {
 .flickr-dots-img {
     height: 20px;
     width: 20px;
-    padding-left: 5px;
+    padding-left: 25px;
 }
 
 .flickr-logo-img {
@@ -144,7 +144,7 @@ main h3 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url(images/img7-darkmountain.jpeg);
+    background-image: url(images/Backyard\ Flowers\ 045.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,29 +155,53 @@ main h3 {
     justify-content: center;
     align-items: center;
 
-    animation: change 30s infinite ease-in-out;
+    animation: change 80s infinite ease-in;
 }
 
 
 @keyframes change {
     0% {
-        background-image: url(images/img6-hawaii.webp);
+        background-image: url(images/Backyard\ Flowers\ 045.jpg);
     }
 
-    25% {
-        background-image: url(images/img4-canyon.jpg);
+    10% {
+        background-image: url(images/Grand\ Canyon\ 050.jpg);
+    }
+
+    20% {
+        background-image: url(images/Italy\ 003.jpg);
+    }
+
+    30% {
+        background-image: url(images/Hawaii\ 002.jpg);
+    }
+
+    40% {
+        background-image: url(images/Italy\ 005.jpg);
     }
 
     50% {
-        background-image: url(images/img1-flowers.jpg);
+        background-image: url(images/Hawaii\ 001.jpg);
     }
 
-    75% {
-        background-image: url(images/img7-darkmountain.jpeg);
+    60% {
+        background-image: url(images/Italy\ 004.jpg);
+    }
+
+    70% {
+        background-image: url(images/Italy\ 005.jpg);
+    }
+
+    80% {
+        background-image: url(images/Italy\ 006.jpg);
+    }
+
+    90% {
+        background-image: url(images/Italy\ 007.jpg);
     }
 
     100% {
-        background-image: url(images/img6-hawaii.webp);
+        background-image: url(images/Backyard\ Flowers\ 045.jpg);
     }
 }
 
@@ -189,4 +213,10 @@ main h3 {
     padding: 20px 20px;
     font-size: 24px;
     font-weight: 600;
+}
+
+/* footer */
+
+footer {
+    border: 2px solid red;
 }
