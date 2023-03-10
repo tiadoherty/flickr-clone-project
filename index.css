@@ -1,0 +1,193 @@
+/* header: */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-nav-container {
+    display: grid;
+    align-items: center;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+        "logo search-bar right-buttons";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.flickr-dots-img {
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+}
+
+.flickr-logo-img {
+    height: 20px;
+    width: 65px;
+    padding-left: 5px;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    background-color: rgb(248, 238, 238, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form>button {
+    all: unset;
+    background-color: rgb(248, 238, 238, 0.8);
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+    padding: 2px;
+}
+
+svg {
+    color: rgb(0, 0, 0, 0.5);
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.right-buttons {
+    grid-area: right-buttons;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    word-wrap: ;
+}
+
+.signup-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 15px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* main: */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+main h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 56px;
+    width: 600px;
+}
+
+main h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 50px;
+    width: 650px;
+    padding: 0;
+}
+
+.section-top {
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/img7-darkmountain.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: change 30s infinite ease-in-out;
+}
+
+
+@keyframes change {
+    0% {
+        background-image: url(images/img6-hawaii.webp);
+    }
+
+    25% {
+        background-image: url(images/img4-canyon.jpg);
+    }
+
+    50% {
+        background-image: url(images/img1-flowers.jpg);
+    }
+
+    75% {
+        background-image: url(images/img7-darkmountain.jpeg);
+    }
+
+    100% {
+        background-image: url(images/img6-hawaii.webp);
+    }
+}
+
+.start-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
